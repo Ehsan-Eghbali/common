@@ -10,5 +10,6 @@ func GetHomeDir() string {
 	if err != nil {
 		fmt.Println("could not get home directory")
 	}
+
 	return currentDir
 }
