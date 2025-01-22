@@ -12,7 +12,8 @@ import (
 var (
 	debugMode    bool                    // Determines if debug logs should be displayed
 	loggedEvents = make(map[string]bool) // Cache to store logged events to prevent duplicates
-	mutex        sync.Mutex              // Mutex to synchronize access to loggedEvents
+	mutex        sync.Mutex
+	// Mutex to synchronize access to loggedEvents
 )
 
 // Init initializes the logrus logger with JSON formatting and INFO level
